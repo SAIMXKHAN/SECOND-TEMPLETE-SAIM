@@ -1,40 +1,31 @@
 
-.landing-page-image{
-    height: 100vh;
-    width: 100%;
-    background-repeat: no-repeat;
-    background-position: center;
-    background-size: cover;
-    background-image: url("../images/bg\ image.jpg");
-    
+
+
+.navbar-nav .nav-link {
+    font-size: 13px !important;
 }
 
 
 
 
-.main-text h1{
-    font-size: 50px;
-    padding-right: 100px;
+
+
+.services .row .service-item {
+    margin-bottom: 20px;
+    height: 200px;
 }
 
 
 
-.paragraph-text{
-    font-size: 13px;
-    margin-right: 557px;
-    line-height: 20px;
-}
-
-.button-tag a{
-    font-size: 12px;
-    
+.oo-text{
+    background-color: #ff581b;
 }
 
 .main-text{
     position: relative;
 }
 
-.main-text h1:after{
+.main-text h1:after {
     content: "";
     height: 4.5px;
     width: 66px;
@@ -44,6 +35,15 @@
     left: 0;
     border-radius: 10px;
 }
+
+/* Center the line on small screens */
+@media (max-width: 575.98px) { /* Bootstrap's 'sm' screen size */
+    .main-text h1:after {
+        left: 50%;
+        transform: translateX(-50%);
+    }
+}
+
 
 .home-tab a{
     color: #ff581b;
@@ -79,7 +79,11 @@
     align-items: center;
 }
 
-
+@media screen and (min-width: 2560px) {
+    .crypto-image {
+      height: 20vh; /* Increase the height for 4K devices */
+    }
+  }
 
 .Solutions{
     color: #15b555d6;
@@ -110,12 +114,15 @@
 }
 
 
-.head-hh{
-    margin-left: 314px;
-}
+
 
 .head-tags ul li a{
     font-size: 13px;
+}
+
+
+.big-text-main{
+    font-size: 50px;
 }
 
 .paragraph-notmain{
@@ -148,6 +155,9 @@
     font-weight: 500;
 }
 
+.head-all{
+    min-height: 100vh;
+}
 
 
 .Web-Design h5{
@@ -174,7 +184,6 @@
 
 
 .bg-img-business{
-    height: 90vh;
     width: 100%;
     background-image: url("../Bg\ im\ business.jpg");
     background-size: cover;
@@ -182,21 +191,59 @@
     background-position: center;
     display: flex;
     align-items: center;
-    margin-top: 140px;
+    margin-top: 100px;
 }
 
+
+
+
 .girl-image{
-    width: 600px;
+    max-width: 100px;
     position: absolute;
     left: 80px;
-    bottom: 25px;
+    bottom: 13px;
+    margin-right: 80px;
+}
+
+@media screen and (min-width:800px) {
+    .girl-image{
+        max-width: 578px;
+        position: absolute;
+        left: 80px;
+        bottom: 13px;
+    }
+}
+
+
+
+@media screen and (min-width:1024px) {
+    .girl-image{
+        height: 40vh;
+        width: 68vh;
+        left: 10px;
+    }
+}
+
+@media screen and (min-width:1440px) {
+    .girl-image{
+        height: 43vh;
+
+    }
+}
+
+@media screen and (min-width:2560px) {
+    .girl-image{
+        height: 35vh;
+        width: 80vh;
+        left: 10px;
+    }
 }
 
 .form-text h5{
     color: #f64f13;
     font-weight: 700;
     font-size: 14px;
-    margin-top: 80px;
+    margin-top: 30px;   
 }
 
 .form-text h1{
@@ -205,13 +252,22 @@
     font-size: 35px;
 }
 
-.form-text{
-    margin-left: 150px;
-}
 
-.form-back{
-    margin-left: 150px;
-}
+
+.bg-img-business {
+    padding: 30px 0; /* Adjust as needed */
+  }
+  
+  .girl-image {
+    display: flex;
+    align-items: center;
+  }
+  
+  .form-back {
+    padding: 20px;
+    border-radius: 8px;
+  }
+  
 
 .Your-name{
     font-size: 13px;
@@ -363,3 +419,25 @@
        text-align: center;
     }
 }
+
+/* Ensure the image is larger on all screens */
+.carousel-item img {
+    width: 100%;
+    height: auto;
+}
+
+/* Adjust the column size for small to medium screens */
+@media (max-width: 767.98px) {
+    .carousel-inner .col-md-10 {
+        max-width: 80%;
+    }
+}
+
+@media (min-width: 768px) and (max-width: 991.98px) {
+    .carousel-inner .col-lg-8 {
+        max-width: 60%;
+    }
+}
+
+/* Increase image size specifically on tablets and small laptops */
+
