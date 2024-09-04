@@ -195,15 +195,17 @@
 }
 
 
-
-
-.girl-image{
-    max-width: 100px;
-    position: absolute;
-    left: 80px;
-    bottom: 13px;
-    margin-right: 80px;
+.girl-image {
+    max-width: 100px; /* Ensure the image does not exceed 100px width */
+    position: absolute; /* Allows precise positioning within the relative container */
+    left: 80px; /* Adjust the horizontal position */
+    bottom: 13px; /* Adjust the vertical position */
+    margin-right: 80px; /* Adjust margin if needed */
 }
+
+
+
+
 
 @media screen and (min-width:800px) {
     .girl-image{
@@ -380,6 +382,7 @@
         margin-top: 120px;
     }
 
+    
     
     
 .last-head{
